@@ -5,6 +5,7 @@ This is an Android quickstart project that includes:
 * [Android Annotations](http://androidannotations.org/)
 * [Spring REST template](https://github.com/excilys/androidannotations/wiki/Rest%20API)
 * [EventBus](https://github.com/greenrobot/EventBus)
+* [ActiveAndroid](https://github.com/pardom/ActiveAndroid)
 
 ### Pre-requisites:
 
@@ -25,3 +26,17 @@ For Android Annotations to work in IDEA, perform the following configuration:
 * target/generated-sources/annotations
 * target/generated-test-sources/test-annotations
 6. Add the above generated directories as source directories in File > Project Structure under the correct module
+
+### ActiveAndroid
+
+At the time of this writing, ActiveAndroid was not available on the public maven repositories
+and therefore needed to be manually [downloaded](https://github.com/pardom/ActiveAndroid.git)
+and installed. Here's the maven dependency:
+
+```
+<dependency>
+	<groupId>com.activeandroid</groupId>
+	<artifactId>activeandroid</artifactId>
+	<version>3.1-SNAPSHOT</version>
+</dependency>
+```

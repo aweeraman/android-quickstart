@@ -4,12 +4,18 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Toast;
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
+import com.activeandroid.query.Select;
 import de.greenrobot.event.EventBus;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 
 @EActivity
-public class HelloAndroidActivity extends Activity {
+public class QuickstartActivity extends Activity {
+
+
 
     /**
      * Called when the activity is first created.
@@ -33,9 +39,25 @@ public class HelloAndroidActivity extends Activity {
         EventBus.getDefault().unregister(this);
     }
 
-    @Click(R.id.button)
+    @Click(R.id.tapme)
     public void tapMe() {
         EventBus.getDefault().post(new String("Ready"));
+    }
+
+    @Click(R.id.activeandroid)
+    public void testActiveAndroid() {
+        QuickstartStorage storage = new QuickstartStorage();
+        storage.key = "foo";
+        storage.value = "bar";
+        storage.save();
+
+        QuickstartStorage retrievedItem = new Select().from(QuickstartStorage.class).where("key = ?", "foo").executeSingle();
+
+        if (retrievedItem.value.equals("bar")) {
+            Toast.makeText(this, "ActiveAndroid successful!", Toast.LENGTH_LONG).show();
+        }
+
+        retrievedItem.delete();
     }
 
     public void onEvent(String event) {
