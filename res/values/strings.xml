@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Quickstart</string>
+    <string name="hello">Android Quickstart</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Android Quickstart</string>
+    <string name="button">Tap Me!</string>
+
+</resources>

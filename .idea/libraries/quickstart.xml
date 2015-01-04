@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="quickstart">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/quickstart.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
