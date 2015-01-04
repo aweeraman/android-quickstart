@@ -16,11 +16,11 @@ This is an Android quickstart project that includes:
 
 For Android Annotations to work in IDEA, perform the following configuration:
 
-1) Go to File > Default Settings
-2) Search for Annotation Processors
-3) Enable annotation processing
-4) Store generated sources relative to module content root
-5) Set the sources directories to:
+1. Go to File > Default Settings
+2. Search for Annotation Processors
+3. Enable annotation processing
+4. Store generated sources relative to module content root
+5. Set the sources directories to:
 * target/generated-sources/annotations
 * target/generated-test-sources/test-annotations
-6) Add the above generated directories as source directories in File > Project Structure under the correct module
+6. Add the above generated directories as source directories in File > Project Structure under the correct module
