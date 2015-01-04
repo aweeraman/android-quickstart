@@ -6,6 +6,7 @@ This is an Android quickstart project that includes:
 * [Spring REST template](https://github.com/excilys/androidannotations/wiki/Rest%20API)
 * [EventBus](https://github.com/greenrobot/EventBus)
 * [ActiveAndroid](https://github.com/pardom/ActiveAndroid)
+* [Parceler](https://github.com/johncarl81/parceler)
 
 ### Pre-requisites:
 
