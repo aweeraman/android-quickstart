@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Toast;
+import de.greenrobot.event.EventBus;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 
@@ -21,11 +22,26 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        EventBus.getDefault().unregister(this);
     }
 
     @Click(R.id.button)
     public void tapMe() {
-        Toast.makeText(this, "Annotations work!", Toast.LENGTH_LONG).show();
+        EventBus.getDefault().post(new String("Ready"));
+    }
+
+    public void onEvent(String event) {
+        if ("Ready".equals(event)) {
+            Toast.makeText(this, "Annotations and EventBus works!", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override

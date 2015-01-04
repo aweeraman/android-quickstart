@@ -2,8 +2,9 @@
 
 This is an Android quickstart project that includes:
 
-* Android Annotations
-* Spring REST template
+* [Android Annotations](http://androidannotations.org/)
+* [Spring REST template](https://github.com/excilys/androidannotations/wiki/Rest%20API)
+* [EventBus](https://github.com/greenrobot/EventBus)
 
 ### Pre-requisites:
 
