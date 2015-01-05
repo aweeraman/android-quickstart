@@ -14,4 +14,10 @@
             android:text="@string/activeandroid"
             android:id="@+id/activeandroid" android:layout_below="@+id/tapme" android:layout_centerHorizontal="true"/>
 
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incrementState"
+            android:id="@+id/incrementState" android:layout_below="@+id/activeandroid" android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

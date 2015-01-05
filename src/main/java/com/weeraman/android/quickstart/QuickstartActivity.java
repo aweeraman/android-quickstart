@@ -4,18 +4,24 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Toast;
-import com.activeandroid.Model;
-import com.activeandroid.annotation.Column;
-import com.activeandroid.annotation.Table;
 import com.activeandroid.query.Select;
 import de.greenrobot.event.EventBus;
+import icepick.Icepick;
+import icepick.Icicle;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 
 @EActivity
 public class QuickstartActivity extends Activity {
 
+    @Icicle
+    int state = 0;
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Icepick.saveInstanceState(this, outState);
+    }
 
     /**
      * Called when the activity is first created.
@@ -27,6 +33,8 @@ public class QuickstartActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Icepick.restoreInstanceState(this, savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         EventBus.getDefault().register(this);
@@ -42,6 +50,12 @@ public class QuickstartActivity extends Activity {
     @Click(R.id.tapme)
     public void tapMe() {
         EventBus.getDefault().post(new String("Ready"));
+    }
+
+    @Click(R.id.incrementState)
+    public void incrementState() {
+        state++;
+        Toast.makeText(this, "State: " + state, Toast.LENGTH_SHORT).show();
     }
 
     @Click(R.id.activeandroid)

@@ -23,7 +23,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/r" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/annotations" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/target/generated-sources/combined-assets" />
       <excludeFolder url="file://$MODULE_DIR$/target/generated-sources/combined-resources" />
       <excludeFolder url="file://$MODULE_DIR$/target/generated-sources/extracted-dependencies" />
@@ -50,5 +50,10 @@
     <orderEntry type="library" name="Maven: de.greenrobot:eventbus:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: com.activeandroid:activeandroid:3.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.google.android:support-v4:r7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.parceler:parceler:0.2.15" level="project" />
+    <orderEntry type="library" name="Maven: org.parceler:parceler-api:0.2.15" level="project" />
+    <orderEntry type="library" name="Maven: com.github.frankiesardo:icepick:2.3.6" level="project" />
+    <orderEntry type="library" name="Maven: com.github.frankiesardo:icepick-processor:2.3.6" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:15.0" level="project" />
   </component>
 </module>

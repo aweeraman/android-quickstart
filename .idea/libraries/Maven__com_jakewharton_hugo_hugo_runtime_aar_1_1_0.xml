@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: com.jakewharton.hugo:hugo-runtime:aar:1.1.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/gen-external-apklibs/com.jakewharton.hugo_hugo-runtime_1.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/gen-external-apklibs/com.jakewharton.hugo_hugo-runtime_1.1.0/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jakewharton/hugo/hugo-runtime/1.1.0/hugo-runtime-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jakewharton/hugo/hugo-runtime/1.1.0/hugo-runtime-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

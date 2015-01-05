@@ -7,6 +7,7 @@ This is an Android quickstart project that includes:
 * [EventBus](https://github.com/greenrobot/EventBus)
 * [ActiveAndroid](https://github.com/pardom/ActiveAndroid)
 * [Parceler](https://github.com/johncarl81/parceler)
+* [Icepick](https://github.com/frankiesardo/icepick)
 
 ### Pre-requisites:
 
